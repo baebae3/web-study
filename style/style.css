@@ -50,41 +50,39 @@ body {
   width: 168px;
 }
 
+#header-link {
+  display: flex;
+  align-items: flex-end;
+}
+
 .promo {
   background-color: #f1e4e6;
   height: 764px;
 }
 
-#promo-img {
-  position: absolute;
-  left: 10%;
-}
-
-.promo-item {
-  padding-top: 290px;
-  padding-left: 634px;
+.background-promo {
+  height: 760px;
+  background-image: url("../img/promo/Layer_57-removebg-preview%201.png");
+  background-repeat: no-repeat;
+  background-position: -225px 0;
   display: flex;
-  justify-content: left;
+  align-items: center;
+  justify-content: end;
 }
 
-.stick {
-  margin-right: 17px;
-  width: 12px;
-  height: 92px;
-  background-color: #f16d7f;
+.promo-title {
+  margin-top: -35px;
+  margin-right: 90px;
 }
 
-#poromo-txt-big {
+#promo-txt-big {
   font-family: Lato, Black;
   color: #222222;
-  margin: 0;
   font-size: 48px;
   line-height: 57px;
 }
 
 #promo-txt-1 {
-  margin: 0px;
-  display: inline-block;
   font-family: Lato;
   font-weight: 900;
   color: #222222;
@@ -94,11 +92,7 @@ body {
 }
 
 #promo-txt-2 {
-  margin-top: 0px;
   font-weight: 700;
-  margin-left: 2px;
-  margin-bottom: 0px;
-  display: inline-block;
   font-family: Lato;
   color: #222222;
   font-size: 32px;
@@ -114,6 +108,10 @@ body {
 .wrap-offer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 30px 5px;
 }
 
 .offer-img {
@@ -121,36 +119,12 @@ body {
   width: 100%;
 }
 
-/*.offerspace {*/
-/*    padding-top: 30px;*/
-/*}*/
-
-#offer-long {
-  height: 100%;
-  width: 100%;
-}
-
 .background-img {
   position: relative;
+  height: 100%;
 }
 
 .background-img:before {
-  content: "";
-  background-color: #211616;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-}
-
-.background-img-2 {
-  position: relative;
-  margin-top: 30px;
-}
-
-.background-img-2:before {
   content: "";
   background-color: #211616;
   position: absolute;
