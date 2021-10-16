@@ -284,6 +284,8 @@ body {
 .feedback {
   height: 448px;
   background-image: url("../img/feedback/fb1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .feedback-background {
@@ -378,7 +380,7 @@ body {
   border-bottom-left-radius: 80px;
   font-family: Lato;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   line-height: 17px;
   color: #222224;
 }
