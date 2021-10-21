@@ -185,6 +185,30 @@ body {
   width: 360px;
 }
 
+.overlay-conteiner {
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 420px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3838;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay-conteiner:hover .overlay {
+  opacity: 0.86;
+}
+
 .product-grid {
   padding: 0;
   margin-top: 30px;
@@ -194,6 +218,23 @@ body {
   align-content: space-around;
   list-style: none;
   gap: 30px;
+}
+
+.btn {
+  background-color: #3a3838;
+  border: 1px solid #ffffff;
+  padding: 15px 18px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.fa-shopping-cart {
+  color: #ffffff;
+  padding-right: 10px;
+  font-size: 20px;
+  opacity: 1;
 }
 
 .products-text-title {
@@ -229,13 +270,18 @@ body {
   margin-bottom: 95px;
 }
 
+.products-button:hover .products-btn-text {
+  background-color: #f16d7f;
+  color: #fff;
+  transition: 0.5s;
+}
+
 #product-link {
   text-decoration: none;
 }
 
 .products-btn-text {
   text-align: center;
-  width: 100%;
   border: 1px solid #ff6a6a;
   padding: 10px;
   color: #f26376;
@@ -289,11 +335,6 @@ body {
 }
 
 .feedback-background {
-  /* margin: 0px 0px 0px 0px;
-  height: 448px;
-  background-color: #f4f4f4;
-  opacity: 0.7;
-  z-index: -1; */
   position: relative;
   height: 100%;
 }
@@ -364,6 +405,16 @@ body {
   z-index: 3;
 }
 
+.subscribe-field:hover {
+  background-color: #cacaca;
+  transition: 0.5s;
+}
+
+.subscribe-btn:hover {
+  background-color: #ec4158;
+  transition: 0.5s;
+}
+
 .subscribe {
   display: flex;
   height: 50px;
@@ -417,4 +468,66 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.feuter-end-item-right {
+  display: flex;
+  gap: 8px;
+}
+
+.feuter-end-link {
+  text-decoration: none;
+}
+.white-box {
+  width: 31px;
+  height: 32px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-facebook-f {
+  color: #000;
+}
+
+.fa-instagram {
+  color: #000;
+}
+
+.fa-pinterest-p {
+  color: #000;
+}
+
+.fa-twitter {
+  color: #000;
+}
+
+.feuter-end-btn {
+  fill: #000;
+}
+
+.white-box:hover {
+  background-color: #f16d7f;
+  transition: 0.5s;
+}
+
+.white-box:hover .feuter-end-btn {
+  fill: #fff;
+  transition: 0.5s;
+}
+
+.white-box:hover .fa-instagram {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.white-box:hover .fa-pinterest-p {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.white-box:hover .fa-twitter {
+  color: #fff;
+  transition: 0.5s;
 }
