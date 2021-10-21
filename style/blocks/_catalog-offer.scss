@@ -1,0 +1,42 @@
+.catalog-offer {
+  background-color: #f8f3f4;
+}
+
+.catalog-offer-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 148px;
+  align-items: center;
+}
+
+.catalog-title {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.breadcrumb {
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  color: #f16d7f;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.breadcrumb li + li:before {
+  color: #636363;
+  content: "/\00a0";
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #636363;
+  font-weight: 300;
+}
