@@ -1,0 +1,26 @@
+/*  переменные */
+
+/* миксины */
+
+@import "_main.scss";
+
+/*шапка*/
+@import "blocks/_header.scss";
+
+/*промо*/
+@import "blocks/_promo.scss";
+
+/*оффер*/
+@import "blocks/_offer.scss";
+
+/*продукты*/
+@import "blocks/_products.scss";
+
+/*особенности*/
+@import "blocks/_feature.scss";
+
+/*подписка*/
+@import "blocks/_subscribe.scss";
+
+/*подвал*/
+@import "blocks/_footer.scss";
