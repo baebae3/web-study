@@ -146,9 +146,10 @@ body {
   margin-bottom: 0px;
   text-align: start;
   display: none;
+  z-index: 3;
 }
 
-.push:hover .sub-menu {
+.push:hover + ul {
   display: block;
 }
 
@@ -183,6 +184,17 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+}
+
+.dropbtn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
 
 /*промо*/
@@ -499,11 +511,6 @@ body {
 }
 
 .feedback-background {
-  /* margin: 0px 0px 0px 0px;
-    height: 448px;
-    background-color: #f4f4f4;
-    opacity: 0.7;
-    z-index: -1; */
   position: relative;
   height: 100%;
 }
@@ -771,5 +778,110 @@ body {
   text-decoration: none;
   color: #636363;
   font-weight: 300;
+}
+
+/*продукты каталога*/
+.catalog-inner-wrap {
+  height: 50px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog-dropdown-left,
+.catalog-dropdown-right {
+  padding: 0px 20px 0px 20px;
+}
+
+.catalog-dropdown-left {
+  position: relative;
+}
+
+.spoiler-list-1 {
+  list-style: none;
+}
+
+.spoiler-list-2 {
+  list-style: none;
+}
+
+.dropdown-list {
+  padding: 0px;
+  margin: 0px;
+  width: 360px;
+  background-color: #fff;
+  list-style: none;
+  position: absolute;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 30px 1px #6f6e6e;
+          box-shadow: 0px 0px 30px 1px #6f6e6e;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.catalog-dropdown-btn-right {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.catalog-dropdown-btn-left {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.catalog-dropdown-btn-left:hover + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dropdown-list:hover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.spoiler1,
+.spoiler2 {
+  padding: 10px 0px 10px 0px;
+}
+
+.spoiler-label {
+  color: #ef5b70;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #6f6e6e;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#spoiler-check-1 {
+  display: none;
+}
+
+.spoiler1 div {
+  display: none;
+}
+
+#spoiler-check-1:checked ~ div {
+  display: block;
+}
+
+#spoiler-check-2 {
+  display: none;
+}
+
+.spoiler2 div {
+  display: none;
+}
+
+#spoiler-check-2:checked ~ div {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

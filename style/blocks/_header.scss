@@ -92,9 +92,10 @@
   margin-bottom: 0px;
   text-align: start;
   display: none;
+  z-index: 3;
 }
 
-.push:hover .sub-menu {
+.push:hover + ul {
   display: block;
 }
 
@@ -129,4 +130,12 @@
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+}
+
+.dropbtn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  display: flex;
+  align-content: flex-end;
 }
