@@ -1,0 +1,141 @@
+.page-header {
+  background-color: #222222;
+  color: white;
+  padding: 18px 0px;
+}
+
+.wrap-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1140px) {
+  .wrap {
+    width: 720px;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrap {
+    width: 570px;
+  }
+}
+
+@media (max-width: 580px) {
+  .wrap {
+    width: 360px;
+  }
+}
+
+.header-item-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 111px;
+}
+
+.nav-right {
+  display: flex;
+  align-content: flex-end;
+}
+
+.header-item-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  width: 168px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.header-item-right li {
+  position: relative;
+}
+.header-link {
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-button {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  display: flex;
+  align-content: flex-end;
+}
+
+.sub-menu .fa-times {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 43px;
+  background-color: #fff;
+  padding: 0px;
+  list-style: none;
+  color: #222222;
+  padding: 20px 20px 0px 20px;
+  height: 770px;
+  margin-bottom: 0px;
+  text-align: start;
+  display: none;
+  z-index: 3;
+}
+
+.push:hover + ul {
+  display: block;
+}
+
+.menu-title {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin: 0px;
+}
+
+.sub-menu-link {
+  text-decoration: none;
+  color: #6f6e6e;
+}
+
+.sub-sub-menu {
+  padding-top: 30px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.sub-sub-sub-menu {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.dropbtn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  display: flex;
+  align-content: flex-end;
+}
