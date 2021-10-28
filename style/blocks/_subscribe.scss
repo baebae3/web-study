@@ -1,6 +1,6 @@
 .feedback {
   height: 448px;
-  background-image: url("/img/Subscribe-back.jpg");
+  background-image: url("../img/Subscribe-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -110,4 +110,8 @@
   line-height: 17px;
   text-align: center;
   color: #ffffff;
+
+  &:hover {
+    background-color: #d15e6d;
+  }
 }

@@ -1,9 +1,11 @@
 .catalog-inner-wrap {
   height: 50px;
-  width: 60%;
+  width: 61%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 44px;
+  padding-bottom: 21px;
 }
 
 .catalog-dropdown-left,
@@ -40,12 +42,27 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  fill: #6f6e6e;
+}
+
+.dropdown-arrow {
+  padding-left: 8px;
 }
 
 .catalog-dropdown-btn-left {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  fill: #000;
 }
 
 .catalog-dropdown-btn-left:hover + ul {
@@ -92,4 +109,40 @@
 
 #spoiler-check-2:checked ~ div {
   display: block;
+}
+
+.inner-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 43px 0px 95px 0px;
+}
+
+.paggination-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  padding: 15px 10px 15px;
+  list-style: none;
+}
+
+.paggination-list button {
+  border: none;
+  background-color: transparent;
+}
+.paggination-list a {
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
+  color: #c4c4c4;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  &:hover {
+    color: #ef5b70;
+  }
+
+  &:active {
+    color: #ef5b70;
+  }
 }

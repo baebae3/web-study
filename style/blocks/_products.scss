@@ -38,13 +38,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3a3838;
+  background-color: rgba(58, 56, 56, 0.86);
   opacity: 0;
   transition: 0.5s;
 }
 
 .overlay-conteiner:hover .overlay {
-  opacity: 0.86;
+  opacity: 1;
 }
 
 .product-grid {
@@ -59,13 +59,19 @@
 }
 
 .btn {
-  background-color: #3a3838;
+  background-color: transparent;
   border: 1px solid #ffffff;
   padding: 15px 18px;
   color: #fff;
   font-family: Lato;
   font-size: 14px;
   line-height: 17px;
+  opacity: 1;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(120%);
+  }
 }
 
 .fa-shopping-cart {

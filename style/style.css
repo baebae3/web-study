@@ -98,6 +98,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  fill: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-link:hover {
+  fill: #f16d7f;
 }
 
 .search-button {
@@ -109,6 +116,13 @@ body {
   display: flex;
   -ms-flex-line-pack: end;
       align-content: flex-end;
+  fill: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search-button:hover {
+  fill: #f16d7f;
 }
 
 .sub-menu .fa-times {
@@ -149,7 +163,7 @@ body {
   z-index: 3;
 }
 
-.push:hover + ul {
+.dropbtn:hover + ul {
   display: block;
 }
 
@@ -162,41 +176,6 @@ body {
   margin: 0px;
 }
 
-.sub-menu-link {
-  text-decoration: none;
-  color: #6f6e6e;
-}
-
-.sub-sub-menu {
-  padding-top: 30px;
-  font-family: Lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #f16d7f;
-}
-
-.sub-sub-sub-menu {
-  padding-top: 10px;
-  padding-left: 20px;
-  font-family: Lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
-}
-
-.dropbtn {
-  background-color: transparent;
-  position: relative;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
 /*промо*/
 .promo {
   background-color: #f1e4e6;
@@ -205,7 +184,7 @@ body {
 
 .background-promo {
   height: 760px;
-  background-image: url("../../img/promo_background.png");
+  background-image: url("../img/promo_background.png");
   background-repeat: no-repeat;
   background-position: -225px 0;
   display: -webkit-box;
@@ -363,14 +342,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #3a3838;
+  background-color: rgba(58, 56, 56, 0.86);
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .overlay-conteiner:hover .overlay {
-  opacity: 0.86;
+  opacity: 1;
 }
 
 .product-grid {
@@ -391,13 +370,21 @@ body {
 }
 
 .btn {
-  background-color: #3a3838;
+  background-color: transparent;
   border: 1px solid #ffffff;
   padding: 15px 18px;
   color: #fff;
   font-family: Lato;
   font-size: 14px;
   line-height: 17px;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
 }
 
 .fa-shopping-cart {
@@ -505,7 +492,7 @@ body {
 /*подписка*/
 .feedback {
   height: 448px;
-  background-image: url("/img/Subscribe-back.jpg");
+  background-image: url("../img/Subscribe-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -627,6 +614,10 @@ body {
   color: #ffffff;
 }
 
+.subscribe-btn:hover {
+  background-color: #d15e6d;
+}
+
 /*подвал*/
 .footer {
   height: 79px;
@@ -702,32 +693,22 @@ body {
 
 .white-box:hover {
   background-color: #f16d7f;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-.white-box:hover .feuter-end-btn {
+.white-box:hover .footer-end-btn {
   fill: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .white-box:hover .fa-instagram {
   color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .white-box:hover .fa-pinterest-p {
   color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .white-box:hover .fa-twitter {
   color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 /*оффер каталога*/
@@ -783,7 +764,7 @@ body {
 /*продукты каталога*/
 .catalog-inner-wrap {
   height: 50px;
-  width: 60%;
+  width: 61%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,6 +774,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 44px;
+  padding-bottom: 21px;
 }
 
 .catalog-dropdown-left,
@@ -830,12 +813,27 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  fill: #6f6e6e;
+}
+
+.dropdown-arrow {
+  padding-left: 8px;
 }
 
 .catalog-dropdown-btn-left {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  fill: #000;
 }
 
 .catalog-dropdown-btn-left:hover + ul {
@@ -883,5 +881,52 @@ body {
 
 #spoiler-check-2:checked ~ div {
   display: block;
+}
+
+.inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 43px 0px 95px 0px;
+}
+
+.paggination-list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid gray;
+  padding: 15px 10px 15px 10px;
+  list-style: none;
+}
+
+.paggination-list button {
+  border: none;
+  background-color: transparent;
+}
+
+.paggination-list a {
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
+  color: #c4c4c4;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.paggination-list a:hover {
+  color: #ef5b70;
+}
+
+.paggination-list a:active {
+  color: #ef5b70;
 }
 /*# sourceMappingURL=style.css.map */
