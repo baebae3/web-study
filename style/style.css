@@ -762,125 +762,131 @@ body {
 }
 
 /*продукты каталога*/
-.catalog-inner-wrap {
-  height: 50px;
-  width: 61%;
+.catalog-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.filter {
+  width: 360px;
+  cursor: pointer;
+}
+
+.filter[open] {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 11;
+}
+
+.filter[open] .filter-dropdown {
+  color: #ef5b70;
+  background-color: #fff;
+  position: relative;
+  z-index: 1001;
+}
+
+.filter[open] .filter-icon {
+  fill: #ef5b70;
+}
+
+.filter-icon {
+  padding-left: 10px;
+  fill: #000;
+}
+
+.filter-dropdown {
+  text-transform: uppercase;
+  display: block;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.filter-dropdown[open] {
+  background-color: #000;
+}
+
+.filter-dropdown-list {
+  position: absolute;
+  z-index: 1000;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+  width: 360px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-dropdown-menu summary {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ef5b70;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  margin: 18px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-filter-dropdown {
+  list-style: none;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  margin-left: 30px;
+  padding: 0px;
+}
+
+.sub-filter-dropdown li {
+  padding-bottom: 15px;
+}
+
+.right-dropdown {
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 44px;
-  padding-bottom: 21px;
+  gap: 10px;
 }
 
-.catalog-dropdown-left,
-.catalog-dropdown-right {
-  padding: 0px 20px 0px 20px;
-}
-
-.catalog-dropdown-left {
-  position: relative;
-}
-
-.spoiler-list-1 {
-  list-style: none;
-}
-
-.spoiler-list-2 {
-  list-style: none;
-}
-
-.dropdown-list {
-  padding: 0px;
-  margin: 0px;
-  width: 360px;
-  background-color: #fff;
-  list-style: none;
-  position: absolute;
-  z-index: 3;
-  -webkit-box-shadow: 0px 0px 30px 1px #6f6e6e;
-          box-shadow: 0px 0px 30px 1px #6f6e6e;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.catalog-dropdown-btn-right {
-  border: none;
+.right-dropdown-btn summary {
   background-color: transparent;
-  cursor: pointer;
+  display: block;
+  border: none;
+  text-transform: uppercase;
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+}
+
+.right-dropdown-icon {
   fill: #6f6e6e;
-}
-
-.dropdown-arrow {
-  padding-left: 8px;
-}
-
-.catalog-dropdown-btn-left {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-family: "Lato";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  fill: #000;
-}
-
-.catalog-dropdown-btn-left:hover + ul {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.dropdown-list:hover {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.spoiler1,
-.spoiler2 {
-  padding: 10px 0px 10px 0px;
-}
-
-.spoiler-label {
-  color: #ef5b70;
-  border-left: 5px solid #ef5b70;
-  border-bottom: 1px solid #6f6e6e;
-  margin-left: 10px;
-  padding-left: 10px;
-}
-
-#spoiler-check-1 {
-  display: none;
-}
-
-.spoiler1 div {
-  display: none;
-}
-
-#spoiler-check-1:checked ~ div {
-  display: block;
-}
-
-#spoiler-check-2 {
-  display: none;
-}
-
-.spoiler2 div {
-  display: none;
-}
-
-#spoiler-check-2:checked ~ div {
-  display: block;
+  padding-left: 5px;
+  padding-bottom: 2px;
 }
 
 .inner-wrap {
