@@ -59,6 +59,10 @@
     line-height: 29px;
     color: #ef5b70;
   }
+
+  @media (max-width: 767px) {
+    width: 375px;
+  }
 }
 
 .border-cart {

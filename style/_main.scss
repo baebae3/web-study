@@ -6,4 +6,17 @@ body {
 .wrap {
   width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: 1190px) {
+    width: 736px;
+    border: 1px solid red;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 767px){
+    width: 375px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 0px 8px 0px 8px;
+  }
 }

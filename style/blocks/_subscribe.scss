@@ -29,6 +29,11 @@
   justify-content: space-between;
   align-items: center;
   height: 448px;
+  @media (max-width: 1190px){
+    flex-direction: column;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
+  }
 }
 
 .feedback-item-left {

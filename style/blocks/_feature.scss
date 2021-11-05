@@ -1,6 +1,14 @@
 .feature {
   height: 340px;
   background-color: #222224;
+  @media (max-width: 1190px){
+    height: 100%;
+  }
+
+  @media (max-width: 767px){
+    height: 100%;
+    padding-bottom: 80px;
+  }
 }
 
 .feature-wrap {
@@ -8,6 +16,24 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 1190px){
+    flex-direction: column;
+    justify-content: space-between;
+    width: 736px;
+  }
+
+  @media (max-width: 767px){
+      width: 343px;
+  }
+}
+
+.feature-item{
+  width: 736px;
+ 
+
+  @media (max-width: 767px) {
+    width: 343px;
+  }
 }
 
 .feature-item-img {

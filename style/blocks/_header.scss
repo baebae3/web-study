@@ -9,23 +9,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
-  .wrap {
-    width: 720px;
-  }
-}
 
-@media (max-width: 750px) {
-  .wrap {
-    width: 570px;
-  }
-}
-
-@media (max-width: 580px) {
-  .wrap {
-    width: 360px;
-  }
-}
 
 .header-item-left {
   display: flex;
@@ -37,6 +21,12 @@
 .nav-right {
   display: flex;
   align-content: flex-end;
+  
+  @media (max-width: 767px){
+    nav-right::nth-last-child(1){
+      display: none;
+    }
+  }
 }
 
 .main-nav {
