@@ -1,6 +1,7 @@
 .feature {
   height: 340px;
   background-color: #222224;
+  flex: 1 0 auto;
   @media (max-width: 1190px){
     height: 100%;
   }

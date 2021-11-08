@@ -1,6 +1,13 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html{
+  height: 100%;
 }
 
 .wrap {
@@ -19,4 +26,8 @@ body {
     box-sizing: border-box;
     padding: 0px 8px 0px 8px;
   }
+}
+
+main {
+  flex: 1 1 auto;
 }

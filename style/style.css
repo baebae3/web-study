@@ -5,6 +5,18 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 .wrap {
@@ -29,6 +41,12 @@ body {
             box-sizing: border-box;
     padding: 0px 8px 0px 8px;
   }
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 /*шапка*/
@@ -678,6 +696,9 @@ body {
 .feature {
   height: 340px;
   background-color: #222224;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 @media (max-width: 1190px) {
@@ -762,6 +783,9 @@ body {
   background-image: url("../img/Subscribe-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .feedback-background {
@@ -900,6 +924,8 @@ body {
 .footer {
   height: 79px;
   background-color: #222224;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 #footer-end-txt {
